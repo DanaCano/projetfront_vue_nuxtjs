@@ -143,23 +143,25 @@ a {
 }
 
 .item-time {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   background-color: inherit;
   border: 1px solid var(--white);
   border-radius: var(--border-radius);
   padding: 8px;
   margin: 12px;
+  width: 112px;
+  display: flex;
+  flex-flow: row;
+  .icon-time {
+    width: 30%;
+  }
 }
 
-.text-time {
-  display: grid;
-  grid-template-columns: 1fr;
-}
 
 .local-time {
   font-size: 10px;
   font-weight: 300;
+  font-family: 'Myriad Pro Condensed';
+  width: 70%;
 }
 
 .local-hour {
