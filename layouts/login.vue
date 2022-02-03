@@ -2,10 +2,10 @@
   <div>
     <div id="masthead" class="header">
       <div class="head">
-        <a href="index.html">
+        <NuxtLink to="/">
           <span class="fa fa-chevron-left icon-back"></span>
           <span class="text-back">BACK</span>
-        </a>
+        </NuxtLink>
       </div>
     </div>
     <Nuxt />
