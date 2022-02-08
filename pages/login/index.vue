@@ -12,7 +12,7 @@
         <div class="title">CONNECT</div>
       </div>
       <div class="content1-form-login">
-        <form action="">
+        <form action="" @submit.prevent>
           <br />
           <br />
           <label class="form-label">USERNAME / MAIL</label>
@@ -22,6 +22,7 @@
               type="text"
               required
               placeholder="Write your username here..."
+              v-model="login.username"
             />
           </div>
           <br />
@@ -35,13 +36,14 @@
               type="text"
               required
               placeholder="Write your passwword here..."
+              v-model="login.password"
             />
           </div>
           <br />
           <span class="mini-label">Forgot your password?</span>
 
           <div class="form-group top">
-            <button class="form-btn">log in</button>
+            <button class="form-btn" @click="onLogin()">log in</button>
           </div>
         </form>
       </div>
@@ -55,7 +57,19 @@ import { Component } from "vue-property-decorator";
 @Component({
   layout: "login",
 })
-class Login extends Vue {}
+class Login extends Vue {
+  login: any = {username: '', password: ''}
+  async onLogin() {
+    try {
+      const log = await this.$auth.loginWith('local', {data: this.login})
+      if(this.$auth.loggedIn) {
+        
+      }
+    } catch(err) {
+      console.error(err)
+    }
+  }
+}
 
 export default Login;
 </script>
