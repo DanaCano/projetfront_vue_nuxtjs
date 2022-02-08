@@ -1,4 +1,5 @@
 @import url("~assets/font/myriad-pro/style.css");
+
 :root {
   --blue: #2F4798;
   --white: #FFFF;
@@ -17,9 +18,11 @@
   --border-radius-btn: 19px;
   --shadow: 0px 0px 15% var(--shadow-color);
 }
+
 body {
   margin: 0;
 }
+
 h1 {
   margin: 0;
 }
@@ -27,11 +30,13 @@ h1 {
 a {
   text-decoration: none;
 }
+
 #container-fluid {
   background: url('~/assets/images/background.png');
   height: 100vh;
   overflow: hidden;
 }
+
 .container {
   width: 100%;
   display: flex;
@@ -146,16 +151,18 @@ a {
 
 .item-time {
   background-color: inherit;
-  border: 1px solid var(--white);
+  border: 1px solid var(--grey);
   border-radius: var(--border-radius);
   padding: 8px;
   margin: 12px;
   width: 112px;
   display: flex;
   flex-flow: row;
+
   .icon-time {
     width: 30%;
   }
+
   .icon-container {
     display: flex;
     align-items: center;
@@ -356,16 +363,18 @@ form {
   padding-top: 38px;
 }
 
-.login-time .item-time {
-  background-color: var(--white);
-  color: var(--blue);
-  box-shadow: var(--shadow);
-}
+.login-time {
+  .item-time {
+    background-color: var(--white);
+    color: var(--blue);
+    box-shadow: var(--shadow);
+  }
 
-.login-time .item-time:hover {
-  background-color: var(--grey);
-}
+  .item-time:hover {
+    background-color: var(--grey);
+  }
 
-.login-time .local-time {
-  color: var(--red);
+  .local-time {
+    color: var(--red);
+  }
 }

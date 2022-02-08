@@ -7,7 +7,7 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
 
 @Component({
-  layout: 'default',
+  layout: 'connected',
   middleware: ['auth']
 })
 

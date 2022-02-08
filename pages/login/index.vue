@@ -33,7 +33,7 @@
               <i class="icon-lock-alt"></i>
             </span>
             <input
-              type="text"
+              type="password"
               required
               placeholder="Write your passwword here..."
               v-model="login.password"
@@ -59,6 +59,11 @@ import { Component } from "vue-property-decorator";
 })
 class Login extends Vue {
   login: any = {username: '', password: ''}
+  mounted () {
+    if (this.$auth.loggedIn) {
+      this.$router.push('/dashboard')
+    }
+  }
   async onLogin() {
     try {
       const log = await this.$auth.loginWith('local', {data: this.login})
