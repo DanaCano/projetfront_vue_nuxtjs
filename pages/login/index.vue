@@ -29,7 +29,7 @@
           <label class="form-label">PASSWORD</label>
           <div class="field">
             <span>
-              <img src="images/lock.png" class="lock-inside-input" />
+              <i class="icon-lock-alt"></i>
             </span>
             <input
               type="text"

@@ -13,7 +13,7 @@
         </h1>
         <p class="btn-group">
           <NuxtLink to="/login" class="btn-login">
-            <i class="icon-user"></i>
+            <i class="icon-profile"></i>
             <span class="text-login">LOGIN</span>
           </NuxtLink>
           <a class="btn-new-account" href="#create_new_account">
@@ -26,7 +26,7 @@
     <!-- end home container -->
     <div class="time">
       <div class="item-time">
-        <div>
+        <div class="icon-container">
           <i class="icon-clock"></i>
         </div>
         <div class="text-time">
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="item-time">
-        <div>
+        <div class="icon-container">
           <i class="icon-clock"></i>
         </div>
         <div class="text-time">
@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="item-time">
-        <div>
+        <div class="icon-container">
           <i class="icon-clock"></i>
         </div>
         <div class="text-time">

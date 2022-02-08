@@ -3,7 +3,7 @@
     <div id="masthead" class="header">
       <div class="head">
         <NuxtLink to="/">
-          <span class="fa fa-chevron-left icon-back"></span>
+          <span class="icon-chevron-left icon-back"></span>
           <span class="text-back">BACK</span>
         </NuxtLink>
       </div>
