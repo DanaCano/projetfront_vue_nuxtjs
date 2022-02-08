@@ -21,6 +21,7 @@
 
 body {
   margin: 0;
+  font-family: "Myriad Pro Regular";
 }
 
 h1 {
@@ -30,23 +31,31 @@ h1 {
 a {
   text-decoration: none;
 }
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
 #container-fluid {
   background: url('~/assets/images/background.png');
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  min-height: 70vh;
   padding: 0;
 }
 
 .header {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 20vh;
 }
@@ -57,9 +66,21 @@ a {
   height: 87px;
 }
 
+#login-layout {
+  background: url('~/assets/images/background-2.png');
+  display: flex;
+  flex-flow: row;
+  min-height: 100vh;
+}
+.fake-sidebar {
+  width: 3vw;
+  background-color: #2F4798;
+}
+.login-content {
+  width: 100%;
+}
 .logo {
   width: 100%;
-  text-align: center;
 }
 
 .content1 {
@@ -105,8 +126,6 @@ a {
 }
 
 .btn-login {
-  padding-top: 9px;
-  padding-bottom: 12px;
   display: flex;
   justify-content: space-around;
   border: none;
@@ -167,6 +186,9 @@ a {
     display: flex;
     align-items: center;
     margin-right: 1rem;
+  }
+  .hour-time {
+    font-weight: 700;
   }
 }
 
@@ -230,8 +252,9 @@ a {
   display: inline-flex;
   flex-direction: column;
   border: 1px solid var(--white);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
+  border-radius: 20px;
+  box-shadow: 0 1.5px 2px -2px #949494;
+  padding: 40px;
 }
 
 .content1-login .head {
@@ -242,6 +265,7 @@ a {
 .content1-login .title {
   font-size: 64px;
   font-weight: 700;
+  margin-top: 35px;
   color: var(--blue);
 }
 
@@ -268,11 +292,6 @@ a {
   padding-top: 8px;
 }
 
-form {
-  width: calc(var(--form-width) + 100px);
-  margin-top: 57px;
-}
-
 .field {
   position: relative;
   height: 45px;
@@ -281,31 +300,36 @@ form {
   background: rgba(255, 255, 255, 0.94);
 }
 
-.field span {
-  width: 40px;
-  line-height: 45px;
-  padding: 0 10px;
-  position: absolute;
-  top: 0;
-  left: 8px;
-  font-family: "Myriad Pro Bold" !important;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--blue);
-  margin-top: 0px;
-}
 
-.field input {
-  padding-left: 64px;
+.field  {
   height: 100%;
   width: 100%;
   background: transparent;
   border: 2px solid var(--blue);
-  border-radius: var(--border-radius);
+  border-radius: 20px;
   outline: none;
   color: #222;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
+  i {
+    width: 40px;
+    line-height: 45px;
+    padding: 0 10px;
+    font-family: "Myriad Pro Bold";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blue);
+    margin-top: 0px;
+  }
+  input {
+    background: #fff;
+    width: 80%;
+    border: none;
+    font-size: 18px;
+    &:focus {
+      border: none;
+    }
+  }
 }
 
 .space {
@@ -353,10 +377,12 @@ form {
   text-transform: uppercase;
   background: var(--blue);
   color: var(--white);
-  width: calc(var(--form-width) + 100px);
   height: var(--form-height-btn);
-  padding: 15px 8px 15px 46px;
   border-radius: var(--border-radius-btn);
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: 'Myriad Pro Regular';
 }
 
 .top {

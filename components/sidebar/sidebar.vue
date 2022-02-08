@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <button @click="onLogout()">logout</button>
+  <div class="sidebar">
+    <span>
+      <i class="icon-right-short" @click="onLogout()"></i>
+    </span>
   </div>
 </template>
 <script lang="ts">

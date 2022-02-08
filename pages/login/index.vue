@@ -5,7 +5,7 @@
         <a class="logo" href="index.html">
           <img
             class=""
-            src="images/logo_symbol_trademark_sf1.png"
+            src="~/assets/images/logo-couleur.png"
             alt="Ozamba Sports"
           />
         </a>
@@ -17,9 +17,10 @@
           <br />
           <label class="form-label">USERNAME / MAIL</label>
           <div class="field">
-            <span>@</span>
+            <i class="icon-arobase"></i>
             <input
               type="text"
+              class="form-control"
               required
               placeholder="Write your username here..."
               v-model="login.username"
@@ -29,12 +30,11 @@
           <br />
           <label class="form-label">PASSWORD</label>
           <div class="field">
-            <span>
               <i class="icon-lock-alt"></i>
-            </span>
             <input
               type="password"
               required
+              class="form-control"
               placeholder="Write your passwword here..."
               v-model="login.password"
             />
