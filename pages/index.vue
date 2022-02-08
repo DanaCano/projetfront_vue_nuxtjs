@@ -59,7 +59,13 @@
 <script lang="ts">
 import Vue from "vue";
 
-export default Vue.extend({
-  name: "IndexPage",
-});
+class DefaultPage extends Vue {
+  mounted () {
+    if (this.$auth.loggedIn) {
+      this.$router.push('/dashboard')
+    }
+  }
+}
+
+export default DefaultPage
 </script>

@@ -63,7 +63,7 @@ class Login extends Vue {
     try {
       const log = await this.$auth.loginWith('local', {data: this.login})
       if(this.$auth.loggedIn) {
-        
+        this.$router.push('/dashboard')
       }
     } catch(err) {
       console.error(err)
