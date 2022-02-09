@@ -8,7 +8,7 @@
     <div class="container">
       <div class="content1">
         <h1 class="title">
-          WELCOME TO<br />
+          {{$t('welcome')}}<br />
           <span class="sub-title">OZAMBA SPORTS</span>
         </h1>
         <p class="btn-group">
