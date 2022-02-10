@@ -39,7 +39,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    './assets/styles/main.scss'
+    './assets/styles/main.scss',
+    './assets/styles/freakflags.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -49,7 +50,8 @@ export default {
   components: [
     '~/components',
     '~/components/sidebar',
-    '~/components/time'
+    '~/components/time',
+    '~/components/i18n'
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
