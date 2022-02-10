@@ -1,6 +1,4 @@
-<template>
-  <div>Dashboard</div>
-</template>
+
 
 <script>
 import Vue from 'vue'
