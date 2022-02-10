@@ -416,6 +416,8 @@ select:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 56px;
+    padding-right: 56px;
 }
 
 #dashboard-group-head-content {
@@ -423,6 +425,14 @@ select:focus {
     flex-direction: row;
     justify-content: space-between;
     width: var(--width-margin);
+    & .title {
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        color: var(--blue);
+        font-size: 30px;
+        font-weight: 700;
+    }
 }
 
 #dashboard-group-head-icon {
@@ -430,10 +440,34 @@ select:focus {
     justify-content: space-around;
     height: fit-content;
     & .icon {
+        margin-left: 16px;
         background-color: var(--secondary-white);
         color: var(--blue);
         border-radius: var(--border-radius);
         padding: 7.67px;
+    }
+}
+
+#dashboard-group-profile {
+    display: flex;
+    margin-left: 16px;
+    img {
+        margin-left: 16px;
+    }
+    button {
+        background-color: inherit;
+        border: 0;
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+        span {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        i {
+            margin-left: 8px;
+            font-size: 10px;
+        }
     }
 }
 
@@ -456,6 +490,7 @@ select:focus {
 }
 
 #dashboard-group-input {
+    margin-left: 16px;
     position: relative;
     .icon-search {
         position: absolute;
