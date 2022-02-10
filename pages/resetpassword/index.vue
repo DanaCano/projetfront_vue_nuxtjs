@@ -27,7 +27,7 @@
             />
           </div>
           <div class="form-group top">
-            <button class="form-btn" @click="onLogin()">Send request</button>
+            <button class="form-btn" @click="onValid()">Send request</button>
           </div>
         </form>
       </div>
@@ -44,6 +44,15 @@ import Component from 'vue-class-component'
 
 class ResetPassword extends Vue {
   login: any = {username: ''}
+  async onValid() {
+    //console.log(process.env.URL_API+'/forgot_password');
+    await this.$axios.$post(process.env.URL_API + '/forgot_password/', {email: this.login.username} )
+      .then(res => {
+      })
+      .catch(error => {
+
+      })
+  }
 }
 export default ResetPassword
 </script>

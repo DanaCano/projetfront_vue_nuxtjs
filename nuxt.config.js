@@ -42,12 +42,13 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxtjs/dotenv',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/auth-next'
+    '@nuxtjs/auth-next',
   ],
 
   auth: {
@@ -61,7 +62,7 @@ export default {
           property: 'user'
         },
         endpoints: {
-          login: { url : '/login', method: 'post'},
+          login: { url : '/api/login', method: 'post'},
           user: false,
           logout: false,
         },
