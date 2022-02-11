@@ -27,7 +27,7 @@
           <!-- group-profile -->
           <div id="dashboard-group-profile" class="dasboard-group-profile">
             <img src="~/assets/images/profile.png" class="profile">
-            <button class="">
+            <button id="btn-profile" class="btn-profile">
               <span>CAMILLE</span>
               <i class="icon-chevron-down"></i>
               </button>
@@ -38,6 +38,8 @@
 
       </div>
     </div>
+    d
+  </div>
 
   </div>
   </div>
