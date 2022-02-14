@@ -1,10 +1,8 @@
 <template>
   <div class="sidebar">
-<!--
     <span>
       <i class="icon-right-short" @click="onLogout()"></i>
     </span>
--->
   <div id="sidebar-logo" class="logo">
     <img src="~/assets/images/logo.png">
   </div>

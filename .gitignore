@@ -6,8 +6,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-dashboard.html
-dashboard.css
+
+node_modules.zip
 # Runtime data
 pids
 *.pid
