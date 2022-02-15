@@ -36,8 +36,8 @@
         </div>
       </div>
 
-      <div id="dashboard-main-content" style="display:flex; flex-direction: row;">
-        <div id="dashboard-sub-main-content" style="display: flex; flex-direction: column; ">
+      <div id="dashboard-main-content">
+        <div id="dashboard-sub-main-content">
           <!-- menu: update athlete stat + create new client + document library -->
           <div id="sub-menu-btn">
             <button v-for="item in sub_menus_btn" class="btn-update">
@@ -154,7 +154,92 @@
             <a class="view-all" href="#view_all">VIEW ALL ...</a>
           </div>
         </div>
-        <div id="sidebar-birth">birthday</div>
+
+        <div id="sidebar-event">
+          <div id="birth">
+            <i class="icon-birthday-cake"></i>
+            <div class="text">
+              <div class="title">5 Birthdays this week</div>
+              <div class="sub-title">Rosa BRUNA and others</div>
+            </div>
+          </div>
+
+          <div id="recent-activity">
+            <div id="recent-activity-head">
+              <h3>RECENT ACTIVITIES</h3>
+              <span>VIEW ALL</span>
+            </div>
+            <div id="recent-activity-main">
+              <div class="recent-activity-main-item">
+                <div class="img">
+                  <img src="~/assets/images/profile.png" alt="">
+                </div>
+                <div class="text">
+                  <div class="title">ANNA BANUTA</div>
+                  <div class="sub-title">Anna has signed with a new club</div>
+                </div>
+              </div>
+              <div class="recent-activity-main-item">
+                <div class="img">
+                  <img src="~/assets/images/profile.png" alt="">
+                </div>
+                <div class="text">
+                  <div class="title">ANNA BANUTA</div>
+                  <div class="sub-title">Anna has signed with a new club</div>
+                </div>
+              </div>
+
+              <div class="recent-activity-main-item">
+                <div class="img">
+                  <img src="~/assets/images/profile.png" alt="">
+                </div>
+                <div class="text">
+                  <div class="title">ANNA BANUTA</div>
+                  <div class="sub-title">Anna has signed with a new club</div>
+                </div>
+              </div>
+
+              <div class="recent-activity-main-item">
+                <div class="img">
+                  <img src="~/assets/images/profile.png" alt="">
+                </div>
+                <div class="text">
+                  <div class="title">ANNA BANUTA</div>
+                  <div class="sub-title">Anna has signed with a new club</div>
+                </div>
+              </div>
+
+              <div class="recent-activity-main-item">
+                <div class="img">
+                  <img src="~/assets/images/profile.png" alt="">
+                </div>
+                <div class="text">
+                  <div class="title">ANNA BANUTA</div>
+                  <div class="sub-title">Anna has signed with a new club</div>
+                </div>
+              </div>
+
+              <div class="more-new-notifs">
+                <span>+99 NEW NOTIFICATIONS</span>
+              </div>
+              <div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div id="dashboard-time-n-chat">
+            <i class="icon-chat-bubble chat-bubble"></i>
+            <div class="login-time">
+              <Time>
+              </Time>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
