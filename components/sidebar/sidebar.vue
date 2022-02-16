@@ -3,6 +3,45 @@
     <span>
       <i class="icon-right-short" @click="onLogout()"></i>
     </span>
+  </div>
+</template>
+<script lang="ts">
+
+import Vue from 'vue'
+import Component from 'vue-class-component'
+class SideBar extends Vue {
+  onLogout() {
+    try {
+      this.$auth.logout()
+      this.$router.push('/')
+    } catch (err) {
+
+    }
+  }
+}
+export default SideBar
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template>
+  <!-- Enock
+     <div class="sidebar">
+    <span>
+      <i class="icon-right-short" @click="onLogout()"></i>
+    </span>
   <div id="sidebar-logo" class="logo">
     <img src="~/assets/images/logo.png">
   </div>
@@ -67,33 +106,34 @@
     <span class="text">Language</span>
     <i class="icon icon-chevron-right"></i>
   </div>
-</div>
+</div> -->
 </template>
 <script lang="ts">
 
-import Vue from 'vue'
-import Component from 'vue-class-component'
-class SideBar extends Vue {
-  menus: any = [];
-  onLogout() {
-    try {
-      this.$auth.logout()
-      this.$router.push('/')
-    } catch (err) {
+// Enock
+//import Vue from 'vue'
+// import Component from 'vue-class-component'
+// class SideBar extends Vue {
+//   menus: any = [];
+//   onLogout() {
+//     try {
+//       this.$auth.logout()
+//       this.$router.push('/')
+//     } catch (err) {
 
-    }
-  }
+//     }
+//   }
 
-  data() {
-    return {
-      menus: [
-        {icon: 'icon-dashboard', label: 'Dashboard'},
-        {icon: 'icon-document', label: 'Document'},
-        {icon: 'icon-run', label: 'Athletes'},
-        {icon: 'icon-calendar', label: 'Calendar'}
-      ]
-    };
-}
-}
-export default SideBar
+//   data() {
+//     return {
+//       menus: [
+//         {icon: 'icon-dashboard', label: 'Dashboard'},
+//         {icon: 'icon-document', label: 'Document'},
+//         {icon: 'icon-run', label: 'Athletes'},
+//         {icon: 'icon-calendar', label: 'Calendar'}
+//       ]
+//     };
+// }
+// }
+// export default SideBar
 </script>

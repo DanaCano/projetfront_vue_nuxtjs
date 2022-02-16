@@ -13,8 +13,6 @@
       </div>
       <div class="content1-form-login">
         <form action="" @submit.prevent>
-          <br />
-          <br />
           <label class="form-label">USERNAME / MAIL</label>
           <div class="field">
             <i class="icon-arobase"></i>
@@ -26,8 +24,6 @@
               v-model="login.username"
             />
           </div>
-          <br />
-          <br />
           <label class="form-label">PASSWORD</label>
           <div class="field">
               <i class="icon-lock-alt"></i>
@@ -39,9 +35,9 @@
               v-model="login.password"
             />
           </div>
-          <br />
-          <span class="mini-label">Forgot your password?</span>
-
+          <!-- Tsiky -->
+          <span class="mini-label"><NuxtLink to="/resetpassword" name="resetpassword">Forgot your password?</NuxtLink></span>
+          
           <div class="form-group top">
             <button class="form-btn" @click="onLogin()">log in</button>
           </div>
