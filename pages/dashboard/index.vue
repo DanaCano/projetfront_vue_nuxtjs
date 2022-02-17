@@ -1,6 +1,5 @@
 <template>
-  <div id="main-content">
-    <sidebar />
+
     <div id="dashboard-content" class="dashboard-content">
       <div id="dashboard-header-content" class="header">
         <div id="dashboard-group-head-content" class="head">
@@ -242,7 +241,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts">
