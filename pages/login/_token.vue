@@ -1,5 +1,4 @@
 <template>
-<!-- Tsiky -->
 <div class="container login">
     <div class="content1-login">
       <div class="head">

@@ -12,8 +12,7 @@
           <span class="sub-title">OZAMBA SPORTS</span>
         </h1>
         <p class="btn-group">
-          <!-- Tsiky <NuxtLink to="/login" name="login" class="btn-login"> -->
-          <NuxtLink to="/login" class="btn-login">
+          <NuxtLink to="/login" name="login" class="btn-login">
             <i class="icon-profile"></i>
             <span class="text-login">LOGIN</span>
           </NuxtLink>
@@ -35,7 +34,7 @@ import Vue from "vue";
 class DefaultPage extends Vue {
   mounted () {
     if (this.$auth.loggedIn) {
-      //this.$router.push('/dashboard')
+      this.$router.push('/dashboard')
     }
   }
 }

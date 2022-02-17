@@ -1,6 +1,6 @@
 <template>
   <div id="main-content">
-    <!--<sidebar /> -->
+    <sidebar />
     <div id="dashboard-content" class="dashboard-content">
       <div id="dashboard-header-content" class="header">
         <div id="dashboard-group-head-content" class="head">
@@ -245,46 +245,37 @@
   </div>
 </template>
 
-<script>
-// import Vue from 'vue'
-// import Component from 'vue-class-component'
-
-// @Component({
-//   layout: 'connected',
-//   middleware: ['auth']
-// })
-
-// class Dashboard extends Vue {
-//   constructor() {
-
-//   }
-
-  
-// }
-
-// export default Dashboard
-</script>
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
 
 
-<script>
-export default {
-  data() {
-    return {
-      sub_menus_btn: [
-        {
-          icon: "icon-update",
-          label: "UPDATE ATHLETE STAT"
-        },
-        {
-          icon: "icon-gridicons_create",
-          label: "CREATE NEW CLIENT"
-        },
-        {
-          icon: "icon-documents-outline",
-          label: "DOCUMENT LIBRARY"
-        },
-      ]
-    }
+@Component({
+  layout: 'connected',
+  middleware: ['auth']
+})
+
+class Dashboard extends Vue {
+  sub_menus_btn: any = []
+
+  mounted () {
+    this.sub_menus_btn = [
+                {
+                    icon: "icon-update",
+                    label: "UPDATE ATHLETE STAT"
+                },
+                {
+                    icon: "icon-gridicons_create",
+                    label: "CREATE NEW CLIENT"
+                },
+                {
+                    icon: "icon-documents-outline",
+                    label: "DOCUMENT LIBRARY"
+                },
+            ]
   }
+  
 }
+
+export default Dashboard
 </script>

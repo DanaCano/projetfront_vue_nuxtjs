@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: row;
     .sidebar {
-        height: 100vh;
+        height: inherit;
         width: 3vw;
         background-color: #2F4798;
         text-align: center;
