@@ -6,7 +6,7 @@
       </div>
       <div class="text-time">
         <span class="local-time">LOCAL TIMES PARIS</span>
-        <span class="hour-time">17:35</span>
+        <span class="hour-time">{{timeParis}}</span>
       </div>
     </div>
     <div class="item-time">
@@ -15,7 +15,7 @@
       </div>
       <div class="text-time">
         <span class="local-time">LOCAL TIMES PARIS</span>
-        <span class="hour-time">17:35</span>
+        <span class="hour-time">{{timeParis}}</span>
       </div>
     </div>
     <div class="item-time">
@@ -24,8 +24,30 @@
       </div>
       <div class="text-time">
         <span class="local-time">LOCAL TIMES PARIS</span>
-        <span class="hour-time">17:35</span>
+        <span class="hour-time">{{timeParis}}</span>
       </div>
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
+@Component
+class Time extends Vue {
+  timeParis: string = ''
+  created () {
+    this.getTime()
+    setTimeout(() => {
+      this.getTime()
+    }, 5000);
+  }
+  async getTime() {
+    await this.$axios.$get("http://worldtimeapi.org/api/timezone/Europe/Paris").then(res => {
+      const time = new Date(res.datetime.split('.')[0])
+      this.timeParis = `${time.getHours()}:${time.getMinutes()}`
+    })
+  }
+}
+export default Time
+</script>
