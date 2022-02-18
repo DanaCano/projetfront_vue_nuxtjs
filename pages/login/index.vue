@@ -35,7 +35,7 @@
               v-model="login.password"
             />
           </div>
-          <span class="mini-label"><NuxtLink to="/resetpassword" name="resetpassword">Forgot your password?</NuxtLink></span>
+          <span class="mini-label"><NuxtLink to="/recuperation" name="resetpassword">Forgot your password?</NuxtLink></span>
 
           <div class="form-group top">
             <button class="form-btn" @click="onLogin()">log in</button>

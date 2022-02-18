@@ -21,7 +21,7 @@
               required
               class="form-control"
               placeholder="Write your passwword here..."
-              v-model="login.password"
+              v-model="form.password"
             />
           </div>
           <label class="form-label">CONFIRM PASSWORD</label>
@@ -32,13 +32,13 @@
               required
               class="form-control"
               placeholder="Write your passwword here..."
-              v-model="login.confirmPassword"
+              v-model="form.confirmPassword"
             />
           </div>
 
 
           <div class="form-group top">
-            <button class="form-btn" @click="onLogin()">Reset Password</button>
+            <button class="form-btn" @click="onReset()">Reset Password</button>
           </div>
         </form>
       </div>
@@ -55,12 +55,20 @@ import Component from 'vue-class-component'
 })
 
 class RefreshToken extends Vue {
-  login: any = {password: '', confirmPassword: ''}
+  form: any = {password: '', confirmPassword: ''}
   token: string = ''
   mounted () {
     this.token = this.$route.params.token
   }
-
+  onReset() {
+    this.form.password = this.form.password.trim()
+    this.form.confirmPassword = this.form.password.trim()
+    if (this.form.password === this.form.confirmPassword) {
+      this.$axios.$post(`${process.env.URL_API}forgot_password/${this.$route.params.token}`, {password: this.form.password}).then(res => {
+        this.$router.push('/login')
+      })
+    }
+  }
 
 }
 

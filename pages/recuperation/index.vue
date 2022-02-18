@@ -46,7 +46,7 @@ class ResetPassword extends Vue {
   login: any = {username: ''}
   async onValid() {
     //console.log(process.env.URL_API+'/forgot_password');
-    await this.$axios.$post(process.env.URL_API + '/forgot_password/', {email: this.login.username} )
+    await this.$axios.$post(process.env.URL_API + 'forgot_password/', {email: this.login.username} )
       .then(res => {
       })
       .catch(error => {
