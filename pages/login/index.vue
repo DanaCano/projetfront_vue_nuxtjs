@@ -12,48 +12,61 @@
         <div class="title">CONNECT</div>
       </div>
       <div class="content1-form-login">
-        <form action="" @submit.prevent>
-          <label class="form-label">USERNAME / MAIL</label>
+        <ValidationObserver ref="form">
+          <form action="" @submit.prevent>
+            <label class="form-label">USERNAME / MAIL</label>
 
-          <ValidationProvider rules="required" v-slot="{ errors }">
-            <div class="field">
-              <i class="icon-arobase"></i>
-              <input
-                type="text"
-                class="form-control"
-                required
-                placeholder="Write your username here..."
-                v-model="login.username"
-              />
+            <ValidationProvider
+              vid="email"
+              rules="required"
+              v-slot="{ errors }"
+            >
+              <div class="field">
+                <i class="icon-arobase"></i>
+                <input
+                  type="text"
+                  class="form-control"
+                  required
+                  placeholder="Write your username here..."
+                  v-model="login.username"
+                />
+              </div>
+              <span class="error-msg">{{ errors[0] }}</span>
+            </ValidationProvider>
+            <label class="form-label">PASSWORD</label>
+            <ValidationProvider
+              vid="password"
+              rules="required"
+              v-slot="{ errors }"
+            >
+              <div class="field">
+                <i class="icon-lock-alt"></i>
+
+                <input
+                  type="password"
+                  required
+                  class="form-control"
+                  placeholder="Write your passwword here..."
+                  v-model="login.password"
+                />
+
+              </div>
+              <span class="error-msg">{{ errors[0] }}</span>
+            </ValidationProvider>
+            <span class="mini-label">
+              <NuxtLink 
+                to="/recuperation" 
+                name="resetpassword"
+              >
+                Forgot your password?
+              </NuxtLink>
+            </span>
+
+            <div class="form-group top">
+              <button class="form-btn" @click="onLogin()">log in</button>
             </div>
-            <span>{{ errors[0] }}</span>
-          </ValidationProvider>
-          <label class="form-label">PASSWORD</label>
-          <ValidationProvider rules="required" v-slot="{ errors }">
-            <div class="field">
-              <i class="icon-lock-alt"></i>
-
-              <input
-                type="password"
-                required
-                class="form-control"
-                placeholder="Write your passwword here..."
-                v-model="login.password"
-              />
-
-              <span>{{ errors[0] }}</span>
-            </div>
-          </ValidationProvider>
-          <span class="mini-label"
-            ><NuxtLink to="/recuperation" name="resetpassword"
-              >Forgot your password?</NuxtLink
-            ></span
-          >
-
-          <div class="form-group top">
-            <button class="form-btn" @click="onLogin()">log in</button>
-          </div>
-        </form>
+          </form>
+        </ValidationObserver>
       </div>
     </div>
   </div>
@@ -79,12 +92,18 @@ class Login extends Vue {
   }
   async onLogin() {
     try {
-      const log = await this.$auth.loginWith("local", { data: this.login });
+      await this.$auth.loginWith("local", { data: this.login });
       if (this.$auth.loggedIn) {
         this.$router.push("/dashboard");
       }
-    } catch (err) {
-      console.error(err);
+    } catch (err: any) {
+      if (err.response.data.code === 401) {
+        // @ts-ignore
+        this.$refs.form.setErrors({
+          email: ["E-mail or password error"],
+          password: ["Password error"],
+        });
+      }
     }
   }
 }
