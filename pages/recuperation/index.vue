@@ -9,7 +9,7 @@
             alt="Ozamba Sports"
           />
         </a>
-        <div class="title">RESET PASSWORD</div>
+        <div class="title">{{$t('reset_password_title')}}</div>
       </div>
       <div class="content1-form-login">
         <form action="" @submit.prevent>

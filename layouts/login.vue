@@ -1,6 +1,8 @@
 <template>
   <div id="login-layout">
-    <div class="fake-sidebar"></div>
+    <div class="fake-sidebar">
+      <language-switcher></language-switcher>
+    </div>
     <div class="login-content">
       <div id="masthead" class="header">
         <div class="head">
