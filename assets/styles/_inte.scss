@@ -31,15 +31,20 @@ h1 {
 a {
   text-decoration: none;
 }
+
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
-input:focus, textarea:focus, select:focus{
+
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
 }
+
 #container-fluid {
   background: url('~/assets/images/background.png');
   min-height: 100vh;
@@ -59,17 +64,20 @@ input:focus, textarea:focus, select:focus{
   width: 100%;
   height: 20vh;
   justify-content: space-between;
+
   .language-switcher {
     margin-right: 4rem;
     cursor: pointer;
     position: relative;
+
     .language-list {
       display: none;
       position: absolute;
       top: 30px;
       justify-content: center;
       align-items: center;
-      flex-flow: column;    background-color: #fff;
+      flex-flow: column;
+      background-color: #fff;
       padding: 2rem;
       right: 0;
     }
@@ -88,16 +96,21 @@ input:focus, textarea:focus, select:focus{
   flex-flow: row;
   min-height: 100vh;
 }
+
 .fake-sidebar {
   width: 3vw;
   background-color: #2F4798;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2rem 0;
 }
+
 .login-content {
   width: 100%;
 }
-.logo {
-  
-}
+
+.logo {}
 
 .content1 {
   display: flex;
@@ -203,6 +216,7 @@ input:focus, textarea:focus, select:focus{
     align-items: center;
     margin-right: 1rem;
   }
+
   .hour-time {
     font-weight: 700;
   }
@@ -295,7 +309,6 @@ input:focus, textarea:focus, select:focus{
 }
 
 .content1-form-login {
-  width: 480px;
   display: block;
 }
 
@@ -317,7 +330,7 @@ input:focus, textarea:focus, select:focus{
 }
 
 
-.field  {
+.field {
   height: 100%;
   width: 100%;
   background: transparent;
@@ -327,6 +340,7 @@ input:focus, textarea:focus, select:focus{
   color: #222;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
+
   i {
     width: 40px;
     line-height: 45px;
@@ -337,11 +351,13 @@ input:focus, textarea:focus, select:focus{
     color: var(--blue);
     margin-top: 0px;
   }
+
   input {
     background: #fff;
     width: 80%;
     border: none;
     font-size: 18px;
+
     &:focus {
       border: none;
     }
