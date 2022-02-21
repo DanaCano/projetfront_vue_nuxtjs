@@ -1,3 +1,5 @@
+import i18n from "./config/i18n";
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -11,20 +13,34 @@ export default {
     htmlAttrs: {
       lang: 'en'
     },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+    meta: [{
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: ''
+      },
+      {
+        name: 'format-detection',
+        content: 'telephone=no'
+      }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/favicon.ico'
+    }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    './assets/styles/main.scss'
+    './assets/styles/main.scss',
+    './assets/styles/freakflags.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -36,7 +52,8 @@ export default {
   components: [
     '~/components',
     '~/components/sidebar',
-    '~/components/time'
+    '~/components/time',
+    '~/components/i18n'
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
@@ -50,8 +67,24 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/auth-next',
+    '@nuxtjs/i18n',
   ],
-
+  i18n: {
+    /* module options */
+    vueI18nLoader: true,
+    defaultLocale: 'en',
+    locales: [
+      {
+        code: 'en',
+        name: 'English'
+      },
+      {
+        code: 'fr',
+        name: 'Français'
+      }
+    ],
+    vueI18n: i18n
+  },
   auth: {
     strategies: {
       local: {
@@ -63,7 +96,10 @@ export default {
           property: 'user'
         },
         endpoints: {
-          login: { url : '/login', method: 'post'},
+          login: {
+            url: '/login',
+            method: 'post'
+          },
           user: false,
           logout: false,
         },

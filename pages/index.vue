@@ -4,11 +4,12 @@
       <a class="logo" href="index.html">
         <img class="" src="~/assets/images/logo.png" alt="Ozamba Sports" />
       </a>
+      <LanguageSwitcher></LanguageSwitcher>
     </div>
     <div class="container">
       <div class="content1">
         <h1 class="title">
-          WELCOME TO<br />
+          {{$t('welcome')}}<br />
           <span class="sub-title">OZAMBA SPORTS</span>
         </h1>
         <p class="btn-group">
@@ -29,7 +30,9 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from "vue"
+import Component from "vue-class-component"
+@Component
 
 class DefaultPage extends Vue {
   mounted () {

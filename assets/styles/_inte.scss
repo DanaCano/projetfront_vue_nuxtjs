@@ -58,6 +58,22 @@ input:focus, textarea:focus, select:focus{
   align-items: center;
   width: 100%;
   height: 20vh;
+  justify-content: space-between;
+  .language-switcher {
+    margin-right: 4rem;
+    cursor: pointer;
+    position: relative;
+    .language-list {
+      display: none;
+      position: absolute;
+      top: 30px;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;    background-color: #fff;
+      padding: 2rem;
+      right: 0;
+    }
+  }
 }
 
 .header .logo img {
@@ -80,7 +96,7 @@ input:focus, textarea:focus, select:focus{
   width: 100%;
 }
 .logo {
-  width: 100%;
+  
 }
 
 .content1 {
@@ -311,7 +327,6 @@ input:focus, textarea:focus, select:focus{
   color: #222;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
-  margin: 1rem 0;
   i {
     width: 40px;
     line-height: 45px;
