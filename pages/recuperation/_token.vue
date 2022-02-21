@@ -56,6 +56,7 @@ import Component from 'vue-class-component'
 
 class RefreshToken extends Vue {
   form: any = {password: '', confirmPassword: ''}
+  isValidToken: boolean = false
   token: string = ''
   mounted () {
     this.token = this.$route.params.token
