@@ -1,18 +1,11 @@
 .language-switcher {
-  position: relative;
-  .language-list {
-    display: block;
-    position: absolute;
-    left: 100%;
-    bottom: 0;
-    padding: 1rem;
-    background: #fff;
-    width: 200px;
+  .v-application--wrap {
+    min-height: unset; 
   }
-  .language-item {
-    padding-bottom: 1rem;
+  .v-menu__content {
+    max-width: none;
   }
-  .language-button {
-    cursor: pointer;
+  .v-btn:not(.v-btn--round).v-size--default {
+    height: 0;
   }
 }
