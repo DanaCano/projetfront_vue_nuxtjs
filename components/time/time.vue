@@ -43,7 +43,7 @@ class Time extends Vue {
   async getTime() {
     await this.$axios.$get("http://worldtimeapi.org/api/timezone/Europe/Paris").then(res => {
       const time = new Date(res.datetime.split('.')[0])
-      this.timeParis = `${time.getHours()}:${time.getMinutes()}`
+      this.timeParis = ("0" + time.getHours()).slice(-2) + ":" + ("0" + time.getMinutes()).slice(-2)
     })
     setTimeout(() => {
       this.getTime()
