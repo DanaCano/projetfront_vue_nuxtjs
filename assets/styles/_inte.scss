@@ -326,6 +326,9 @@ select:focus {
 
 .content1-login .form-label {
   color: var(--red);
+  margin-top: 35px;
+  display: inline-block;
+  color: $cyan;
 }
 
 .content1-form-login {
@@ -424,6 +427,14 @@ select:focus {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
+  margin-top: 10px;
+  a {
+    color: inherit;
+    &:link, &:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
 }
 
 .form-btn {

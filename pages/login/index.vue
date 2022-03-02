@@ -9,7 +9,7 @@
             alt="Ozamba Sports"
           />
         </a>
-        <div class="title">CONNECT</div>
+        <span class="title">CONNECT</span>
       </div>
       <div class="content1-form-login">
         <ValidationObserver ref="form">
