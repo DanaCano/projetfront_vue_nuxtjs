@@ -4,7 +4,7 @@
       <a class="logo" href="index.html">
         <img class="" src="~/assets/images/logo.png" alt="Ozamba Sports" />
       </a>
-      <LanguageSwitcher></LanguageSwitcher>
+      <LanguageSwitcher :position="bottom"></LanguageSwitcher>
     </div>
     <div class="container">
       <div class="content1">

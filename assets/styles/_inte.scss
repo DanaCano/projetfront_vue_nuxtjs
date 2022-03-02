@@ -1,4 +1,5 @@
 @import url("~assets/font/myriad-pro/style.css");
+@import '_variable';
 
 :root {
   --blue: #2F4798;
@@ -98,12 +99,12 @@ select:focus {
 }
 
 .fake-sidebar {
-  width: 3vw;
+  width: 79px;
   background-color: #2F4798;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 10rem 0;
+  padding-bottom: 2rem;
 }
 
 .login-content {

@@ -1,11 +1,42 @@
+@import 'variable';
 .language-switcher {
-  .v-application--wrap {
-    min-height: unset; 
+  position: relative;
+  .language-list {
+    position: absolute;
+    padding: 1rem;
+    background-color: $blue;
+    border-radius: 0 8px 8px 0;
+    &.top {
+      top: -145px;
+      right: -55px
+    }
+    &.left {
+      top: -45px;
+      right: 45px;
+    }
+    &.bottom {
+      top: 35px;
+      right: 55px;
+    }
+    &.right {
+      top: -65px;
+      left: 45px;
+    }
+    .language-item {
+      padding: 0.5rem;
+      a {
+        color: $white;
+        &:link, &:visited {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+      .bold {
+        font-weight: 700;
+      }
+    }
   }
-  .v-menu__content {
-    max-width: none;
-  }
-  .v-btn:not(.v-btn--round).v-size--default {
-    height: 0;
+  .language-button {
+    cursor: pointer;
   }
 }
