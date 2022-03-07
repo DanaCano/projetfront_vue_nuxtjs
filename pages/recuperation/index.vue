@@ -27,7 +27,7 @@
             />
           </div>
           <div class="form-group top">
-            <button class="form-btn" @click="onValid()">Send request</button>
+            <button class="form-btn" @click="onValid()">Reset password</button>
           </div>
         </form>
       </div>

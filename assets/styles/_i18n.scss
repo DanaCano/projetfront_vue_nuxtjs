@@ -5,7 +5,7 @@
     position: absolute;
     padding: 1rem;
     background-color: $blue;
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px;
     &.top {
       top: -145px;
       right: -55px
@@ -16,7 +16,7 @@
     }
     &.bottom {
       top: 35px;
-      right: 55px;
+      right: -55px;
     }
     &.right {
       top: -65px;

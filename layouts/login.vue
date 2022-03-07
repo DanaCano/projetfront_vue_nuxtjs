@@ -1,7 +1,7 @@
 <template>
   <div id="login-layout">
     <div class="fake-sidebar">
-      <language-switcher></language-switcher>
+      <language-switcher :position="'right'"></language-switcher>
     </div>
     <div class="login-content">
       <div id="masthead" class="header">

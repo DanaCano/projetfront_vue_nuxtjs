@@ -4,9 +4,9 @@
       <a class="logo" href="index.html">
         <img class="" src="~/assets/images/logo.png" alt="Ozamba Sports" />
       </a>
-      <LanguageSwitcher :position="bottom"></LanguageSwitcher>
+      <LanguageSwitcher :position="'bottom'"></LanguageSwitcher>
     </div>
-    <div class="container">
+    <div class="container main-welcome">
       <div class="content1">
         <h1 class="title">
           {{$t('welcome')}}<br />

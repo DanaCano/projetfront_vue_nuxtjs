@@ -58,7 +58,7 @@
                 to="/recuperation" 
                 name="resetpassword"
               >
-                Forgot your password?
+                Forgot your account?
               </NuxtLink>
             </span>
 
