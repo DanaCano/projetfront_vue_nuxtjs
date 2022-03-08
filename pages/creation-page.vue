@@ -26,7 +26,7 @@
 
     <div class="create-new-account-middle-2 bckgd-middle-2">
       <div id="dashboard-content" class="dashboard-content">
-        <div id="dashboard-header-content" class="header">
+        <div id="dashboard-header-content" class="header custom-header">
           <div id="dashboard-group-head-content" class="head dashboard-group-head-content">
             <!-- group-icons -->
             <div id="dashboard-group-head-icon" class="group-icon">
@@ -235,14 +235,17 @@
 
           </div>
 
-          <i class="icon-chat-bubble chat-bubble"></i>
-          <div class="login-time">
-            <Time>
-            </Time>
-          </div>
-
         </div>
+
       </div>
+
+        <!-- group chat and bubble & login time  -->
+        <i class="icon-chat-bubble chat-bubble"></i>
+        <div class="login-time custom-login-time">
+          <Time>
+          </Time>
+        </div>
+
 
       <!-- end content -->
     </div>

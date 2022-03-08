@@ -835,6 +835,7 @@ padding-top: 50px; */
 
 //create a new account 
 .create-new-account-container {
+    height: 1080px;
     display: flex;
     flex-direction: row;
 }
@@ -929,4 +930,16 @@ padding-top: 50px; */
     width: 100%;
     text-align: center;
     margin-top: 88px;
+}
+
+.custom-header {
+    padding-top: 54px;
+    padding-bottom: 63px;
+    height: auto;
+}
+
+.custom-login-time {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
