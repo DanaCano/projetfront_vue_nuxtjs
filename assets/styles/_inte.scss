@@ -813,19 +813,120 @@ padding-top: 50px; */
     display: flex;
     align-content: flex-end;
     margin: 0px;
-    position: absolute;
     bottom: 44px;
     .time {
         padding-left: 60px;
     }
-    .chat-bubble {
-        background-color: var(--blue);
-        color: var(--white);
-        border-radius: 40px;
-        font-size: 40px;
-        position: absolute;
-        right: 60px;
-        bottom: 200px;
-        padding: 18px;
+}
+
+.chat-bubble {
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 40px;
+    font-size: 40px;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 909px;
+    right: 60px;
+    bottom: 200px;
+    padding: 18px;
+}
+
+//create a new account 
+.create-new-account-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.create-new-account-middle-1 {
+    width: 754px;
+}
+
+.create-new-account-middle-2 {
+    width: 1166px;
+}
+
+.bckgd-middle-1 {
+    background-color: var(--blue) !important;
+}
+
+.bckgd-middle-2 {
+    #dashboard-content {
+        background-color: var(--white);
     }
+}
+
+#dashboard-header-content {
+    width: auto;
+}
+
+.dashboard-group-head-content {
+    width: 100%;
+    justify-content: right !important;
+}
+
+#create-new-account-main-content {
+    padding-left: 67px;
+    padding-top: 0;
+    margin-bottom: 62px;
+    .head {
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+            color: var(--blue);
+            margin-top: 0;
+        }
+    }
+    .forms {
+        .category-title {
+            color: var(--red);
+            font-size: 20px;
+            font-weight: 400;
+            padding-left: 0;
+            margin-top: 56px;
+            margin-bottom: 18px;
+        }
+        .form-group-radio {
+            background-color: var(--white);
+            box-shadow: 0 4px 7px 0 #949494;
+            border-radius: 20px;
+            border: 1px solid var(--white);
+            width: fit-content;
+            padding: 5px 18px;
+            margin-left: 26px;
+            margin-right: 26px;
+        }
+        .form-category-choice {
+            color: rgba(47, 71, 152, 0.3);
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.create-new-account-form {
+    margin-top: 18px;
+    margin-left: 75px;
+}
+
+.category-group-radio-button {
+    display: flex;
+}
+
+.field {
+    margin-left: 26px;
+}
+
+.form-grp-input {
+    width: 410px;
+    height: 50px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+}
+
+.custom {
+    width: 100%;
+    text-align: center;
+    margin-top: 88px;
 }
