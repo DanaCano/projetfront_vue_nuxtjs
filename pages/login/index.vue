@@ -2,13 +2,15 @@
   <div class="container login">
     <div class="content1-login">
       <div class="head">
-        <a class="logo" href="index.html">
-          <img
-            class=""
-            src="~/assets/images/logo-couleur.png"
-            alt="Ozamba Sports"
-          />
-        </a>
+        <NuxtLink to="/">
+          <span class="logo">
+            <img
+              class=""
+              src="~/assets/images/logo-couleur.png"
+              alt="Ozamba Sports"
+            />
+          </span>
+        </NuxtLink>
         <span class="title">CONNECT</span>
       </div>
       <div class="content1-form-login">
@@ -49,15 +51,11 @@
                   placeholder="Write your passwword here..."
                   v-model="login.password"
                 />
-
               </div>
               <span class="error-msg">{{ errors[0] }}</span>
             </ValidationProvider>
             <span class="mini-label">
-              <NuxtLink 
-                to="/recuperation" 
-                name="resetpassword"
-              >
+              <NuxtLink to="/recuperation" name="resetpassword">
                 Forgot your account?
               </NuxtLink>
             </span>

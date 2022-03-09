@@ -2,20 +2,20 @@
   <div class="container login">
     <div class="content1-login">
       <div class="head">
-        <a class="logo" href="index.html">
+        <span class="logo">
           <img
             class=""
             src="~/assets/images/logo-couleur.png"
             alt="Ozamba Sports"
           />
-        </a>
+        </span>
         <div class="title">RESET PASSWORD</div>
       </div>
       <div class="content1-form-login">
         <form action="" @submit.prevent>
           <label class="form-label">PASSWORD</label>
           <div class="field">
-              <i class="icon-lock-alt"></i>
+            <i class="icon-lock-alt"></i>
             <input
               type="password"
               required
@@ -26,7 +26,7 @@
           </div>
           <label class="form-label">CONFIRM PASSWORD</label>
           <div class="field">
-              <i class="icon-lock-alt"></i>
+            <i class="icon-lock-alt"></i>
             <input
               type="password"
               required
@@ -35,7 +35,6 @@
               v-model="form.confirmPassword"
             />
           </div>
-
 
           <div class="form-group top">
             <button class="form-btn" @click="onReset()">Reset Password</button>
@@ -47,31 +46,34 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Component from 'vue-class-component'
+import Vue from "vue";
+import Component from "vue-class-component";
 
-@Component ({
-  layout: 'login'
+@Component({
+  layout: "login",
 })
-
 class RefreshToken extends Vue {
-  form: any = {password: '', confirmPassword: ''}
-  isValidToken: boolean = false
-  token: string = ''
-  mounted () {
-    this.token = this.$route.params.token
+  form: any = { password: "", confirmPassword: "" };
+  isValidToken: boolean = false;
+  token: string = "";
+  mounted() {
+    this.token = this.$route.params.token;
   }
   onReset() {
-    this.form.password = this.form.password.trim()
-    this.form.confirmPassword = this.form.password.trim()
+    this.form.password = this.form.password.trim();
+    this.form.confirmPassword = this.form.password.trim();
     if (this.form.password === this.form.confirmPassword) {
-      this.$axios.$post(`${process.env.URL_API}forgot_password/${this.$route.params.token}`, {password: this.form.password}).then(res => {
-        this.$router.push('/login')
-      })
+      this.$axios
+        .$post(
+          `${process.env.URL_API}forgot_password/${this.$route.params.token}`,
+          { password: this.form.password }
+        )
+        .then((res) => {
+          this.$router.push("/login");
+        });
     }
   }
-
 }
 
-export default RefreshToken
+export default RefreshToken;
 </script>
