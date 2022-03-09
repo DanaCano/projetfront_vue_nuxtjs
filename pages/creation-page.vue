@@ -144,7 +144,7 @@
                 <div style="width: auto; display: flex; flex-wrap: wrap;">
                   <div class="form-grp-input">
                     <div class="category-title">Name</div>
-                    <div class="field">
+                    <div class="field custom-field">
                       <i class="icon-profile"></i>
                       <input
                         type="text"
@@ -157,7 +157,7 @@
                   
                   <div class="form-grp-input">
                     <div class="category-title">Last name</div>
-                    <div class="field">
+                    <div class="field custom-field">
                       <i class="icon-profile"></i>
                       <input
                         type="text"
@@ -170,7 +170,7 @@
 
                   <div class="form-grp-input">
                     <div class="category-title">Username</div>
-                    <div class="field">
+                    <div class="field custom-field">
                       <i class="icon-profile"></i>
                       <input
                         type="text"
@@ -183,7 +183,7 @@
 
                   <div class="form-grp-input">
                     <div class="category-title">Adress Email</div>
-                    <div class="field">
+                    <div class="field custom-field">
                       <i class="icon-profile"></i>
                       <input
                         type="text"
@@ -196,7 +196,7 @@
 
                   <div class="form-grp-input">
                     <div class="category-title">Password</div>
-                    <div class="field">
+                    <div class="field custom-field">
                       <i class="icon-profile"></i>
                       <input
                         type="password"
@@ -209,7 +209,7 @@
 
                   <div class="form-grp-input">
                     <div class="category-title">Confirm Password</div>
-                    <div class="field">
+                    <div class="field custom-field">
                       <i class="icon-profile"></i>
                       <input
                         type="password"
