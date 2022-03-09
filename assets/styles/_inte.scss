@@ -10,7 +10,10 @@
     --black: #484848;
     --border-bottom: 1px solid #E0E0E0;
     --shadow-color: #949494;
-    --border-radius: 8px;
+    --border-radius: 9px;
+    --border-radius-2: 20px;
+    --border-radius-3: 44px;
+    --border-radius-4: 41px;
     ----full-height-default: 1080px;
     --full-height-login: 100vh;
     --width-margin: calc(100vw - 240px);
@@ -124,7 +127,7 @@ select:focus {
 
 .btn-group {
     display: flex;
-    margin-top: 60px;
+    margin-top: 41px;
 }
 
 .btn-login,
@@ -416,12 +419,13 @@ padding-top: 50px; */
 }
 
 
-/*dashboard*/
+/* dashboard */
 
 #dashboard-content {
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-white);
+    width: calc(100% - 3vw);
 }
 
 #dashboard-header-content {
@@ -456,7 +460,7 @@ padding-top: 50px; */
         margin-left: 16px;
         background-color: var(--secondary-white);
         color: var(--blue);
-        border-radius: var(--border-radius);
+        border-radius: var(--border-radius-2);
         padding: 7.67px;
     }
 }
@@ -529,15 +533,10 @@ padding-top: 50px; */
     color: var(--blue);
 }
 
+#sub-menu-btn,
 #dashboard-group-sub-btn {
     display: flex;
-}
-
-#sub-menu-btn {
-    margin-left: auto; //131px
-    margin-right: 86px;
-    padding-left: auto;
-    padding-right: auto;
+    justify-content: space-between;
     .btn-update {
         width: initial;
         height: auto;
@@ -547,10 +546,10 @@ padding-top: 50px; */
         background-color: var(--white);
         color: var(--blue);
         border: 2px solid var(--blue);
-        border-radius: var(--border-radius);
+        border-radius: var(--border-radius-2);
         font-size: 24px;
         font-weight: 700;
-        margin-right: 38px;
+        margin-right: 0px;
         &:last-child {
             margin-right: 0;
         }
@@ -581,7 +580,7 @@ padding-top: 50px; */
     flex-direction: column;
     padding-top: 34px;
     padding-left: 105px;
-    border-radius: var(--border-radius);
+    border-radius: 0 var(--border-radius-4) var(--border-radius-4) var(--border-radius-4);
     .date,
     .text,
     .hour {
@@ -593,7 +592,7 @@ padding-top: 50px; */
         left: 0;
         color: var(--blue);
         background-color: var( --greylight);
-        border-radius: var(--border-radius);
+        border-radius: var(--border-radius-3);
         width: initial;
         height: initial;
         padding-top: 17px;
@@ -627,7 +626,8 @@ padding-top: 50px; */
             .content-title {
                 display: flex;
                 flex-direction: column;
-                padding-bottom: 27px;
+                justify-content: center;
+                padding-bottom: 0;
                 .title {
                     color: var(--blue)
                 }
@@ -685,14 +685,15 @@ padding-top: 50px; */
 #dashboard-sub-main-content {
     display: flex;
     flex-direction: column;
-    padding-right: 107px
+    padding-left: 111px;
+    padding-right: 107px;
 }
 
 #pending {
     .content-title {
         display: flex;
         align-items: center;
-        padding-bottom: 15px;
+        padding-bottom: 0;
     }
     .text {
         border-left: 0;
@@ -716,7 +717,6 @@ padding-top: 50px; */
     align-items: center;
     padding-left: calc(40px + 14px);
     padding-right: calc(40px + 14px);
-    position: relative;
     #birth {
         width: 295px;
         height: 66px;
@@ -725,6 +725,7 @@ padding-top: 50px; */
         align-items: center;
         background-color: var(--grey);
         border-radius: var(--border-radius);
+        margin-bottom: 111px;
         i {
             font-size: 50px;
             color: var(--blue);
@@ -809,31 +810,22 @@ padding-top: 50px; */
     }
 }
 
-#dashboard-time-n-chat {
-    display: flex;
-    align-content: flex-end;
-    margin: 0px;
-    bottom: 44px;
-    .time {
-        padding-left: 60px;
-    }
-}
-
 .chat-bubble {
     background-color: var(--blue);
     color: var(--white);
-    border-radius: 40px;
+    border-radius: 9px;
     font-size: 40px;
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 909px;
-    right: 60px;
-    bottom: 200px;
+    right: 30px;
+    bottom: calc( 128px + 44px);
     padding: 18px;
 }
 
-//create a new account 
+
+/* creation-page */
+
 .create-new-account-container {
     height: 1080px;
     display: flex;
@@ -890,7 +882,7 @@ padding-top: 50px; */
         }
         .form-group-radio {
             background-color: var(--white);
-            box-shadow: 0 4px 7px 0 #949494;
+            box-shadow: 0 9px 9px -14px #949494;
             border-radius: 20px;
             border: 1px solid var(--white);
             width: fit-content;
@@ -911,12 +903,26 @@ padding-top: 50px; */
     margin-left: 75px;
 }
 
+.create-new-account-form-content {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .category-group-radio-button {
     display: flex;
 }
 
 .custom-field {
     margin-left: 26px;
+    i {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    input {
+        padding-left: 8px;
+        margin-left: -10px;
+    }
 }
 
 .form-grp-input {
@@ -926,10 +932,17 @@ padding-top: 50px; */
     margin-bottom: 70px;
 }
 
-.custom {
+.custom-form-group {
     width: 100%;
     text-align: center;
     margin-top: 88px;
+    .form-btn {
+        border-radius: 44px;
+        width: 469px;
+        height: auto;
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
 }
 
 .custom-header {
@@ -940,6 +953,17 @@ padding-top: 50px; */
 
 .custom-login-time {
     position: absolute;
-    bottom: 0;
+    bottom: 44px;
     right: 0;
+}
+
+.custom-login-time1 {
+    position: absolute;
+    bottom: 44px;
+    left: 0;
+}
+
+.main-content,
+.main-content2 {
+    position: relative;
 }

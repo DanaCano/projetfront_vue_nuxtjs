@@ -1,5 +1,5 @@
 <template>
-  <div class="create-new-account-container">
+  <div id="main-content" class="create-new-account-container main-content2">
     <div class="create-new-account-middle-1 bckgd-middle-1">
       <div id="masthead" class="header">
         <a class="logo" href="index.html">
@@ -65,83 +65,82 @@
           </div>
           <div class="forms">
             <div class="category">
-              <form class="create-new-account-form">
+              <form class="create-new-account-form" action="/dashboard">
                 <div class="category-title">Choose the category</div>
-                  <div class="category-group-radio-button">
-                    <div class="form-group-radio">
-                      <input
-                        type="radio"
-                        hidden
-                        name="category"
-                        id="category1"
-                        class="form-category-choice"
-                        value="hermes"
-                      />
-                      <label class="form-category-choice" for="category1">hermes</label>
-                    </div>
-
-                    <div class="form-group-radio">
-                      <input
-                        type="radio"
-                        hidden
-                        name="category"
-                        id="category2"
-                        class="form-category-choice"
-                        value="mercury"
-                      />
-                      <label class="form-category-choice" for="category2">mercury</label>
-                    </div>
-
-                    <div class="form-group-radio">
-                      <input
-                        type="radio"
-                        hidden
-                        name="category"
-                        id="category3"
-                        class="form-category-choice"
-                        value="janus"
-                      />
-                      <label class="form-category-choice" for="category3">janus</label>
-                    </div>
-
-                    <div class="form-group-radio">
-                      <input
-                        type="radio"
-                        hidden
-                        name="category"
-                        id="category4"
-                        class="form-category-choice"
-                        value="devoir"
-                      />
-                      <label class="form-category-choice" for="category4">devoir</label>
-                    </div>
-
-                    <div class="form-group-radio">
-                      <input
-                        type="radio"
-                        hidden
-                        name="category"
-                        id="category5"
-                        class="form-category-choice"
-                        value="coequipier"
-                      />
-                      <label class="form-category-choice" for="category5">coéquipier</label>
-                    </div>
-
-                    <div class="form-group-radio">
-                      <input
-                        type="radio"
-                        hidden
-                        name="category"
-                        id="category5"
-                        class="form-category-choice"
-                        value="DEVOIR"
-                      />
-                      <label class="form-category-choice" for="category5">invité</label>
-                    </div>
-                    
+                <div class="category-group-radio-button">
+                  <div class="form-group-radio">
+                    <input
+                      type="radio"
+                      hidden
+                      name="category"
+                      id="category1"
+                      class="form-category-choice"
+                      value="hermes"
+                    />
+                    <label class="form-category-choice" for="category1">hermes</label>
                   </div>
-                <div style="width: auto; display: flex; flex-wrap: wrap;">
+
+                  <div class="form-group-radio">
+                    <input
+                      type="radio"
+                      hidden
+                      name="category"
+                      id="category2"
+                      class="form-category-choice"
+                      value="mercury"
+                    />
+                    <label class="form-category-choice" for="category2">mercury</label>
+                  </div>
+
+                  <div class="form-group-radio">
+                    <input
+                      type="radio"
+                      hidden
+                      name="category"
+                      id="category3"
+                      class="form-category-choice"
+                      value="janus"
+                    />
+                    <label class="form-category-choice" for="category3">janus</label>
+                  </div>
+
+                  <div class="form-group-radio">
+                    <input
+                      type="radio"
+                      hidden
+                      name="category"
+                      id="category4"
+                      class="form-category-choice"
+                      value="devoir"
+                    />
+                    <label class="form-category-choice" for="category4">devoir</label>
+                  </div>
+
+                  <div class="form-group-radio">
+                    <input
+                      type="radio"
+                      hidden
+                      name="category"
+                      id="category5"
+                      class="form-category-choice"
+                      value="coequipier"
+                    />
+                    <label class="form-category-choice" for="category5">coéquipier</label>
+                  </div>
+
+                  <div class="form-group-radio">
+                    <input
+                      type="radio"
+                      hidden
+                      name="category"
+                      id="category5"
+                      class="form-category-choice"
+                      value="DEVOIR"
+                    />
+                    <label class="form-category-choice" for="category5">invité</label>
+                  </div>
+                </div>
+                <div class="create-new-account-form-content">
                   <div class="form-grp-input">
                     <div class="category-title">Name</div>
                     <div class="field custom-field">
@@ -152,9 +151,8 @@
                         placeholder="Write your username here..."
                       />
                     </div>
-
                   </div>
-                  
+
                   <div class="form-grp-input">
                     <div class="category-title">Last name</div>
                     <div class="field custom-field">
@@ -165,89 +163,72 @@
                         placeholder="Write your last name here..."
                       />
                     </div>
-
                   </div>
 
                   <div class="form-grp-input">
                     <div class="category-title">Username</div>
                     <div class="field custom-field">
-                      <i class="icon-profile"></i>
+                      <i class="icon-arobase"></i>
                       <input
                         type="text"
                         class="form-control"
                         placeholder="Write your username here..."
                       />
                     </div>
-
                   </div>
 
                   <div class="form-grp-input">
                     <div class="category-title">Adress Email</div>
                     <div class="field custom-field">
-                      <i class="icon-profile"></i>
+                      <i class="icon-arobase"></i>
                       <input
                         type="text"
                         class="form-control"
                         placeholder="Write your address email here..."
                       />
                     </div>
-
                   </div>
 
                   <div class="form-grp-input">
                     <div class="category-title">Password</div>
                     <div class="field custom-field">
-                      <i class="icon-profile"></i>
+                      <i class="icon-lock-alt"></i>
                       <input
                         type="password"
                         class="form-control"
                         placeholder="Write your password here..."
                       />
                     </div>
-
                   </div>
 
                   <div class="form-grp-input">
                     <div class="category-title">Confirm Password</div>
                     <div class="field custom-field">
-                      <i class="icon-profile"></i>
+                      <i class="icon-lock-alt"></i>
                       <input
                         type="password"
                         class="form-control"
                         placeholder="Write your address email here..."
                       />
                     </div>
-
                   </div>
 
-                  <div class="form-group custom">
-                    <button class="form-btn" style="width: 469px;">confirm</button>
+                  <div class="form-group custom-form-group">
+                    <button class="form-btn">confirm</button>
                   </div>
-      
-
                 </div>
-                
               </form>
-
-
             </div>
-
-
           </div>
-
         </div>
-
       </div>
 
-        <!-- group chat and bubble & login time  -->
-        <i class="icon-chat-bubble chat-bubble"></i>
-        <div class="login-time custom-login-time">
-          <Time>
-          </Time>
-        </div>
-
-
       <!-- end content -->
+    </div>
+    <!-- group chat and bubble & login time  -->
+    <i class="icon-chat-bubble chat-bubble"></i>
+    <div class="login-time custom-login-time">
+      <Time></Time>
     </div>
     <!-- end register container -->
   </div>
@@ -260,7 +241,9 @@ class DefaultPage extends Vue {
     if (this.$auth.loggedIn) {
       this.$router.push('/dashboard')
     }
+
   }
+
 }
 
 export default DefaultPage
