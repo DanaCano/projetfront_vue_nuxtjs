@@ -620,14 +620,14 @@ padding-top: 50px; */
             }
         }
         .text {
-            border-left: 4px solid var(--red);
             display: flex;
             flex-direction: row;
             .content-title {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                padding-bottom: 0;
+                align-self: center;
+                padding-top: 18px;
+                padding-bottom: 18px;
                 .title {
                     color: var(--blue)
                 }
@@ -968,4 +968,27 @@ padding-top: 50px; */
 .main-content,
 .main-content2 {
     position: relative;
+}
+
+.container-title {
+    .sub-title {
+        // padding-bottom: 18px;
+    }
+}
+
+#date1 {
+    border-left: 4px solid var(--red);
+}
+
+#date2,
+#date3 {
+    border-left: 4px solid var(--blue);
+}
+
+
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }

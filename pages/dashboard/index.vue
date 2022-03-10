@@ -50,10 +50,9 @@
           <div class="event">
             <div class="date">
               <span class="day">20</span>
-              <br />
               <span class="month">MAY</span>
             </div>
-            <div>
+            <div class='container-title' id="date1">
               <div class="text">
                 <span class="hour">09:00</span>
                 <div class="content-title">
@@ -74,13 +73,12 @@
           <div class="event">
             <div class="date">
               <span class="day">25</span>
-              <br />
               <span class="month">MAY</span>
             </div>
-            <div>
+            <div class='container-title' id="date2">
               <div class="text">
                 <span class="hour">18:00</span>
-                <div class="container-title">
+                <div>
                   <div class="content-title">
                     <span class="title">MEETING WITH JAMES J. JUVENTUS</span>
                     <span class="sub-title">lorem ipsum dolor sit amet</span>
@@ -93,13 +91,18 @@
           <div class="event">
             <div class="date">
               <span class="day">06</span>
-              <br />
               <span class="month">JUNE</span>
             </div>
-            <div>
+            <div class='container-title' id="date3">
               <div class="text">
                 <span class="hour">14:00</span>
-                <div class="container-title">
+                <div>
+                  <div class="content-title">
+                    <span class="title">MEETING WITH JAMES J. JUVENTUS</span>
+                    <span class="sub-title">lorem ipsum dolor sit amet</span>
+                  </div>
+
+
                   <div class="content-title">
                     <span class="title">MEETING WITH JAMES J. JUVENTUS</span>
                     <span class="sub-title">lorem ipsum dolor sit amet</span>
@@ -114,7 +117,7 @@
         <div id="pending" class="card">
           <h3 class="card-title">PENDING WORK</h3>
           <div class="event">
-            <div>
+            <div class='container-title'>
               <div class="text text-pending">
                 <i class="icon icon-document"></i>
                 <div class="content-title">
@@ -126,7 +129,7 @@
           </div>
 
           <div class="event">
-            <div>
+            <div class='container-title'>
               <div class="text text-pending">
                 <i class="icon icon-document"></i>
                 <div class="content-title">
@@ -138,7 +141,7 @@
           </div>
 
           <div class="event">
-            <div>
+            <div class='container-title'>
               <div class="text text-pending">
                 <i class="icon icon-document"></i>
                 <div class="content-title">
@@ -220,7 +223,7 @@
             <div class="more-new-notifs">
               <span>+99 NEW NOTIFICATIONS</span>
             </div>
-            <div></div>
+            <div class='container-title'></div>
           </div>
         </div>
       </div>
