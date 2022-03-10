@@ -35,9 +35,8 @@ class LanguageSwitcher extends Vue {
   closeOnClick: boolean = true
   showSwitcher: boolean = false
   locale: string = ""
-  @Prop() position: string
+  @Prop() position: string = ""
   mounted() {
-    console.log(this.position)
     //console.log("eto")
     //this.locale = typeof(this.$i18n.getLocaleCookie()) !== 'undefined' ? this.$i18n.getLocaleCookie()?.toString().toUpperCase() : this.$i18n.defaultLocale.toString().toUpperCase()
   }
