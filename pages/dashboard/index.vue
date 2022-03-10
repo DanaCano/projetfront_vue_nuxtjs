@@ -240,7 +240,7 @@ import Component from 'vue-class-component'
 
 @Component({
   layout: 'connected',
-  // middleware: ['auth']
+  middleware: ['auth']
 })
 
 class Dashboard extends Vue {

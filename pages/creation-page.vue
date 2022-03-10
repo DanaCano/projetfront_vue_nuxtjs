@@ -65,7 +65,7 @@
           </div>
           <div class="forms">
             <div class="category">
-              <form class="create-new-account-form" action="/dashboard">
+              <form class="create-new-account-form">
                 <div class="category-title">Choose the category</div>
                 <div class="category-group-radio-button">
                   <div class="form-group-radio">
