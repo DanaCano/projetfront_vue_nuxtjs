@@ -37,7 +37,7 @@ import Component from "vue-class-component"
 class DefaultPage extends Vue {
   mounted () {
     if (this.$auth.loggedIn) {
-      //this.$router.push('/dashboard')
+      this.$router.push('/dashboard')
     }
   }
 }
