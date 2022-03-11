@@ -17,10 +17,10 @@
             <i class="icon-profile"></i>
             <span class="text-login">LOGIN</span>
           </NuxtLink>
-          <a class="btn-new-account" href="#create_new_account">
+          <NuxtLink to="account-creation" name="account-creation" class="btn-new-account">
             <i class="icon-plus"></i>
             <span class="text-new-account">CREATE NEW ACCOUNT</span>
-          </a>
+          </NuxtLink>
         </p>
       </div>
     </div>
@@ -30,17 +30,16 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
-import Component from "vue-class-component"
+import Vue from "vue";
+import Component from "vue-class-component";
 @Component
-
 class DefaultPage extends Vue {
-  mounted () {
+  mounted() {
     if (this.$auth.loggedIn) {
-      this.$router.push('/dashboard')
+      this.$router.push("/dashboard");
     }
   }
 }
 
-export default DefaultPage
+export default DefaultPage;
 </script>
