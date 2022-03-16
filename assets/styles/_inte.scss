@@ -391,8 +391,14 @@ padding-top: 50px; */
     font-weight: bold;
     color: var(--blue);
     margin-top: 0px;
+    &.error {
+      color: $red;
+    }
+    &.valid {
+      color: $green;
+    }
   }
-
+  
   input {
     background: #fff;
     width: 80%;

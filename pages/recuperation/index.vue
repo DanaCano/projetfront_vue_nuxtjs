@@ -26,7 +26,6 @@
               placeholder="Write your username here..."
               v-model="login.username"
             />
-            <i class="icon-error-round"></i>
           </div>
           <div class="form-group top">
             <button class="form-btn" @click="onValid()">Reset password</button>

@@ -32,8 +32,11 @@
                   placeholder="Write your username here..."
                   v-model="login.username"
                 />
+                <span v-if="errors.length > 0">
+                  <i class="icon-error-round error" v-if=" errors[0]"></i>
+                  <i class="icon-check-round valid" v-else></i>
+                </span>
               </div>
-              <span class="error-msg">{{ errors[0] }}</span>
             </ValidationProvider>
             <label class="form-label">PASSWORD</label>
             <ValidationProvider
@@ -51,8 +54,11 @@
                   placeholder="Write your passwword here..."
                   v-model="login.password"
                 />
+                <span v-if="errors.length > 0">
+                  <i class="icon-error-round error" v-if=" errors[0]"></i>
+                  <i class="icon-check-round valid" v-else></i>
+                </span>
               </div>
-              <span class="error-msg">{{ errors[0] }}</span>
             </ValidationProvider>
             <span class="mini-label">
               <NuxtLink to="/recuperation" name="resetpassword">
