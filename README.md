@@ -1,4 +1,4 @@
-# ozamba-front
+# stage-front
 
 ## Build Setup
 
