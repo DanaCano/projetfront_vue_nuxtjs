@@ -1,5 +1,7 @@
 # stage-front
 
+## Projet réalisé avec la bibliothèque du framework Vue.js v2.6 : "Nuxt.js v2.15", appli avec inscription de Users uniquement donné par le super administrateur et connexion validée par jwt token. Gestion des athlètes, des équipes, du calendrier, des anniversaires, des événements sportifs, etc. L'ensemble du projet a été réalisé en back-end : Symfony 6 avec API Platform et front-end avec Nuxt.js v2.15 et Vue.js v2.6 qui consomme la BDD à travers la plateforme API Symfony.
+
 ## Build Setup
 
 ```bash
