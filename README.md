@@ -17,53 +17,55 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+Pour des explications détaillées sur le fonctionnement, consultez la  [documentation](https://nuxtjs.org).
 
-## Special Directories
+## Répertoires spéciaux
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+Vous pouvez créer les répertoires supplémentaires suivants, dont certains ont des comportements spéciaux. Seul `pages` est nécessaire ; vous pouvez les supprimer si vous ne voulez pas utiliser leurs fonctionnalités.
 
 ### `assets`
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+Le répertoire assets contient vos actifs non compilés tels que les fichiers Stylus ou Sass, les images ou les polices.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+Plus d'informations sur l'utilisation de ce répertoire dans [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
 ### `components`
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+Le répertoire components contient vos composants Vue.js. Les composants constituent les différentes parties de votre page et peuvent être réutilisés et importés dans vos pages, vos mises en page et même d'autres composants.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+Plus d'informations sur l'utilisation de ce répertoire dans [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
 
 ### `layouts`
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+Les layouts sont d'une grande aide lorsque vous voulez changer l'apparence de votre application Nuxt, que vous souhaitiez inclure une barre latérale ou avoir des layouts distincts pour le mobile et le bureau.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+Plus d'informations sur l'utilisation de ce répertoire dans [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
 
 
 ### `pages`
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+Ce répertoire contient les vues et les routes de votre application. Nuxt lira tous les fichiers `*.vue` dans ce répertoire et configurera Vue Router automatiquement.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+Plus d'informations sur l'utilisation de ce répertoire dans [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
 
 ### `plugins`
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+Le répertoire plugins contient les plugins JavaScript que vous souhaitez exécuter avant d'instancier l'application Vue.js racine. C'est l'endroit pour ajouter des plugins Vue et pour injecter des fonctions ou des constantes. Chaque fois que vous avez besoin d'utiliser `Vue.use()`, vous devez créer un fichier dans `plugins/` et ajouter son chemin aux plugins dans `nuxt.config.js`.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+Plus d'informations sur l'utilisation de ce répertoire dans [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
 
 ### `static`
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
+Ce répertoire contient vos fichiers statiques. Chaque fichier à l'intérieur de ce répertoire est mis en correspondance avec `/`.
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+Exemple : `/static/robots.txt` is mapped as `/robots.txt`.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+Plus d'informations sur l'utilisation de ce répertoire dans [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
 
 ### `store`
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+Ce répertoire contient les fichiers de votre magasin Vuex. La création d'un fichier dans ce répertoire active automatiquement Vuex.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+Pour plus d'informations sur l'utilisation de ce répertoire, consultez [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+Merci beaucoup et à bientôt !
